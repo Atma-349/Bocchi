@@ -195,8 +195,58 @@ footer a:hover {
     <img src="data/nsfw.jpg" alt="nsfw">
   </section>
 
-  <footer style="text-align: center; margin-top: 50px; padding: 20px; background-color: #f4f4f4;">
+  <footer>
     <p><a href="#home">Kembali ke atas</a></p>
   </footer>
+
+  <!-- Audio Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="data/back audio.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung audio.
+  </audio>
+
+  <!-- Tombol Music Toggle -->
+  <button id="musicBtn" onclick="toggleMusic()" style="position: fixed; bottom: 20px; right: 20px; padding: 12px 24px; background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%); border: 3px solid #fff; border-radius: 25px; cursor: pointer; font-weight: bold; color: #fff; font-size: 14px; z-index: 1000; box-shadow: 0 8px 25px rgba(168, 85, 247, 0.5); transition: transform 0.2s;">
+  🎵 Music ON
+</button>
+
+  <script>
+    const music = document.getElementById('bgMusic');
+    const musicBtn = document.getElementById('musicBtn');
+    let isPlaying = false;
+    
+    // Hover effect untuk tombol
+    musicBtn.addEventListener('mouseenter', () => {
+      musicBtn.style.transform = 'scale(1.1)';
+    });
+    
+    musicBtn.addEventListener('mouseleave', () => {
+      musicBtn.style.transform = 'scale(1)';
+    });
+    
+    // Coba autoplay saat halaman load
+    window.addEventListener('load', () => {
+      music.play().then(() => {
+        isPlaying = true;
+        musicBtn.textContent = '🎵 Music ON';
+      }).catch(() => {
+        console.log('Autoplay diblokir, klik tombol untuk play musik');
+        musicBtn.textContent = '🎵 Music OFF';
+      });
+    });
+    
+    // Function toggle music
+    function toggleMusic() {
+      if (isPlaying) {
+        music.pause();
+        isPlaying = false;
+        musicBtn.textContent = '🎵 Music OFF';
+      } else {
+        music.play();
+        isPlaying = true;
+        musicBtn.textContent = '🎵 Music ON';
+      }
+    }
+  </script>
 </body>
 </html>
