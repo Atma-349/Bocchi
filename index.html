@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Halaman Ku</title>
+  <title>Bocchi The Rock! - Hitori Gotoh Fan Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -90,6 +90,28 @@
       margin-bottom: 10px;
     }
 
+    .friend-card {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      gap: 20px;
+    }
+
+    .friend-info {
+      flex: 1;
+    }
+
+    .friend-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
     footer {
       text-align: center;
       margin-top: 30px;
@@ -117,67 +139,99 @@
   <div class="glass-container">
     <nav>
       <a href="#home">Home</a> | 
-      <a href="#belajar">Belajar HTML</a> | 
-      <a href="#tentang">Tentang</a>
+      <a href="#belajar">Profil Karakter</a> | 
+      <a href="#tentang">Biodata & Galeri</a>
     </nav>
 
     <!-- SECTION HOME -->
     <section id="home">
-      <h2>Selamat datang di halamanku</h2>
-      <p>Hai selamat datang di halamanku, isinya sederhananya saja karna untuk permulaan saja ini Website</p>
+      <h2>Selamat datang di Bocchi Universe!</h2>
+      <p>Hai! Selamat datang di halaman fan page Hitori Gotoh, si gitaris pemalu yang berbakat dari anime Bocchi the Rock! 🎸</p>
 
-      <p>cek progres latihanku di <a href="#belajar">Belajar Html</a></p>
+      <p>Bocchi adalah karakter yang menginspirasi banyak orang dengan perjalanannya mengatasi kecemasan sosial melalui musik.</p>
       
-      <p>Penyemangat ku <a href="#tentang">Oh MY</a></p><br>
+      <p>Jelajahi halaman ini untuk mengenal lebih dalam tentang <a href="#belajar">Karakter Bocchi</a> dan <a href="#tentang">Biodata Lengkapnya</a></p><br>
 
       <img src="data/bochi1.gif" alt="bocchi">
     </section>
 
     <!-- SECTION BELAJAR -->
     <section id="belajar">
-      <h2>Belajar HTML</h2>
+      <h2>Profil Karakter Hitori Gotoh</h2>
       <p>
-        <abbr title="Hyper Text Markup Language">HTML</abbr> 
-        sangat asik walau asli aku g paham jir, kayanya aku bakal serius belajar kali ini. jujur aku juga pusing soal ini bahasa pakenya gimana, cuma kata nicho aku harus bisa biar enggak di anggap cuma fake skill.
+        <strong>Hitori Gotoh</strong>, atau lebih dikenal sebagai <abbr title="Bocchi adalah julukan karena sifatnya yang sering menyendiri">Bocchi-chan</abbr>, 
+        adalah protagonis utama dari anime dan manga "Bocchi the Rock!". Ia adalah seorang gadis SMA yang sangat pemalu namun memiliki bakat luar biasa dalam bermain gitar.
       </p>
 
-      <h3>Bahasa yang ingin ku pelajari</h3>
-      <ol type="a">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>PHP</li>
-        <li>JS</li>
-        <li>MySQL</li>
+      <h3>Kepribadian Bocchi</h3>
+      <ol type="1">
+        <li><strong>Pemalu Ekstrem:</strong> Sangat gugup saat berinteraksi dengan orang lain</li>
+        <li><strong>Overthinking:</strong> Selalu cemas dan memikirkan skenario terburuk</li>
+        <li><strong>Berbakat:</strong> Gitaris yang sangat mahir meski otodidak</li>
+        <li><strong>Kreatif:</strong> Memiliki imajinasi yang kaya (kadang berlebihan)</li>
+        <li><strong>Tekun:</strong> Berlatih gitar dengan keras setiap hari</li>
       </ol>
 
-      <h3>Browser dan Konten</h3>
-      <ul type="disk">
-        <li>chrome
-          <ul type="circle">
-            <li>yutub</li>
-            <li>fasnuk</li>
+      <h3>Teman-teman di Kessoku Band</h3>
+      
+      <div class="friend-card">
+        <div class="friend-info">
+          <h4 style="margin: 0 0 10px 0; color: #ff6b9d;">Nijika Ijichi - Drummer</h4>
+          <ul style="margin: 5px 0;">
+            <li>Pemimpin band yang ceria dan penuh semangat</li>
+            <li>Orang pertama yang mengajak Bocchi bergabung ke Kessoku Band</li>
+            <li>Sangat perhatian dan supportif terhadap Bocchi</li>
+            <li>Adik dari pemilik live house Starry</li>
           </ul>
-        </li>
-        <li>yandex
-          <ul type="square">
-            <li>hentai</li>
-            <li>doujin</li>
-          </ul>
-        </li>
-      </ul>
+        </div>
+        <img src="data/nijika.gif" alt="Nijika Ijichi" class="friend-image">
+      </div>
 
-      <h3>Deskripsi Bahasa</h3>
+      <div class="friend-card">
+        <div class="friend-info">
+          <h4 style="margin: 0 0 10px 0; color: #ff6b9d;">Ryo Yamada - Bassist</h4>
+          <ul style="margin: 5px 0;">
+            <li>Pemain bass yang cool dan misterius</li>
+            <li>Selalu kehabisan uang karena suka beli peralatan musik</li>
+            <li>Sering membuat komentar menarik dan tidak biasa</li>
+            <li>Sangat berbakat dalam membuat bass line</li>
+          </ul>
+        </div>
+        <img src="data/ryo.gif" alt="Ryo Yamada" class="friend-image">
+      </div>
+
+      <div class="friend-card">
+        <div class="friend-info">
+          <h4 style="margin: 0 0 10px 0; color: #ff6b9d;">Ikuyo Kita - Vokalis & Gitaris Rhythm</h4>
+          <ul style="margin: 5px 0;">
+            <li>Energik, populer, dan sangat ramah</li>
+            <li>Awalnya tidak bisa main gitar tapi cepat belajar</li>
+            <li>Memiliki kepribadian yang ceria dan optimis</li>
+            <li>Sering memberikan energi positif ke band</li>
+          </ul>
+        </div>
+        <img src="data/kita.gif" alt="Ikuyo Kita" class="friend-image">
+      </div>
+
+      <h3>Karakteristik Unik Bocchi</h3>
       <dl>
-        <dt>HTML</dt>
-        <dd>Hyper Text Markup Language, merupakan bahasa markup yang biasa di gunakan dalam membuat halaman Website</dd>
-        <dt>LOREM</dt>
-        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium magnam quasi quae ea sequi alias, consequatur fugit repudiandae, autem ab nulla totam! Nam soluta reiciendis perferendis commodi libero, necessitatibus earum.</dd>
+        <dt>Gaya Bermain Gitar</dt>
+        <dd>Bocchi memiliki kemampuan bermain gitar yang sangat tinggi, terutama dalam solo dan teknik fingering yang kompleks. Ia belajar otodidak dengan menonton video online dan berlatih berjam-jam di kamarnya.</dd>
+        
+        <dt>Reaksi Kecemasan</dt>
+        <dd>Ketika terlalu gugup, Bocchi sering mengalami reaksi ekstrem seperti berubah menjadi "kubus", menghilang, atau bahkan membatu. Ini adalah representasi komedi dari kecemasan sosialnya yang parah.</dd>
+        
+        <dt>YouTube Channel</dt>
+        <dd>Bocchi memiliki channel YouTube rahasia dengan username "guitarhero" di mana ia mengunggah video bermain gitar. Channel ini cukup populer meski identitasnya dirahasiakan.</dd>
+        
+        <dt>Hubungan dengan Keluarga</dt>
+        <dd>Bocchi memiliki adik perempuan bernama Futari yang lebih ekstrovert darinya. Kedua orang tuanya sangat mendukung hobinya bermain gitar dan perkembangan sosialnya.</dd>
       </dl>
     </section>
 
     <!-- SECTION TENTANG -->
     <section id="tentang">
-      <h2>Hitori Gotoh</h2>
+      <h2>Hitori Gotoh - Biodata & Galeri</h2>
       
       <img src="data/bochi2.gif" alt="hitori" width="250" height="250">
 
